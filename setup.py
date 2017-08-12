@@ -9,12 +9,12 @@ version = "0.0.1"
 with open('README.rst') as f:
     long_description = f.read()
 
-setup(name='ofxstatement-sample',
+setup(name='ofxstatement-ro-ing',
       version=version,
-      author="Andrey Lebedev",
-      author_email="andrey@lebedev.lt",
-      url="https://github.com/kedder/ofxstatement",
-      description=("Sample plugin for ofxstatement"),
+      author="Dan Vatca",
+      author_email="dan.vatca@gmail.com",
+      url="https://github.com/danvatca/ofxstatement-ro-ing",
+      description=("ING Romania plugin for ofxstatement"),
       long_description=long_description,
       license="GPLv3",
       keywords=["ofx", "banking", "statement"],
@@ -32,7 +32,7 @@ setup(name='ofxstatement-sample',
       namespace_packages=["ofxstatement", "ofxstatement.plugins"],
       entry_points={
           'ofxstatement':
-          ['sample = ofxstatement.plugins.sample:SamplePlugin']
+          ['ingro = ofxstatement.plugins.ingro:IngRoPlugin']
           },
       install_requires=['ofxstatement'],
       include_package_data=True,
